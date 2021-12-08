@@ -1,0 +1,107 @@
+﻿<Window x:Class="FTP_UploadFile.App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FTP_UploadFile.App"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="950">
+    <Window.Resources>
+        <Style x:Key="Style_Default" TargetType="Control">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+        
+        <Style x:Key="Style_Title" 
+               TargetType="Label" 
+               BasedOn="{StaticResource Style_Default}">
+            <Setter Property="FontSize" Value="45"/>
+            <Setter Property="Foreground" Value="Brown"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        
+        <Style x:Key="Style_Default_2" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default}">
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+        
+        <Style x:Key="Style_Input" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_2}">
+            <Setter Property="Width" Value="200"/>
+        </Style>
+        <Style x:Key="Style_Label" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_2}">
+            <Setter Property="Foreground" Value="Blue"/>
+        </Style>
+        
+        <Style x:Key="Style_Default_Button" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_2}">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Width" Value="150"/>
+        </Style>
+        <Style x:Key="Style_Button_Clear" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_Button}">
+            <Setter Property="Background" Value="Red"/>
+        </Style>
+        <Style x:Key="Style_Button_Submit" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_Button}">
+            <Setter Property="Background" Value="Green"/>
+        </Style>
+        <Style x:Key="Style_Button_Open" 
+               TargetType="Control" 
+               BasedOn="{StaticResource Style_Default_Button}">
+            <Setter Property="Background" Value="Blue"/>
+        </Style>
+    </Window.Resources>
+    <StackPanel>
+        <Label x:Name="Title" 
+               Content="Загрузка файла на FTP-сервер"
+               Style="{StaticResource Style_Title}"/>
+        
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="Label_Input_AddressFTPServer" 
+                       Content="FTP"
+                       Style="{StaticResource Style_Label}"/>
+                <TextBox x:Name="Input_AddressFTPServer"
+                         Style="{StaticResource Style_Input}"/>
+            </StackPanel>
+        
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="Label_Input_LoginFTPServer" 
+                       Content="login:"
+                       Style="{StaticResource Style_Label}"/>
+                <TextBox x:Name="Input_LoginFTPServer"
+                         Style="{StaticResource Style_Input}"/>
+            </StackPanel>
+        
+            <StackPanel Orientation="Horizontal">
+                <Label x:Name="Label_Input_PasswordFTPServer" 
+                       Content="password:"
+                       Style="{StaticResource Style_Label}"/>
+                <PasswordBox x:Name="Input_PasswordFTPServer"
+                             Style="{StaticResource Style_Input}"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="Button_SelectFile" 
+                    Content="Select file..."
+                    Style="{StaticResource Style_Button_Open}"/>
+            <Label x:Name="Label_FilePath" 
+                   Style="{StaticResource Style_Default_2}"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="Button_Clear" 
+                    Content="Clear"
+                    Style="{StaticResource Style_Button_Clear}"/>
+            <Button x:Name="Button_Upload" 
+                    Content="Upload" 
+                    Style="{StaticResource Style_Button_Submit}"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
