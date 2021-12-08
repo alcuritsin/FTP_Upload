@@ -26,6 +26,7 @@ namespace FTP_Lib
             var fileContents = new byte[fs.Length];
             fs.Read(fileContents, 0, fileContents.Length);
             request.ContentLength = fileContents.Length;
+            request.EnableSsl = true;
             
             using var requestStream = request.GetRequestStream();
             requestStream.Write(fileContents, 0, fileContents.Length);
