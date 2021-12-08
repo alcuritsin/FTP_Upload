@@ -6,4 +6,8 @@
         <UseWPF>true</UseWPF>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\FTP_Lib\FTP_Lib.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -42,17 +42,20 @@
         <StackPanel Orientation="Horizontal">
             <Button x:Name="Button_SelectFile" 
                     Content="Select file..."
-                    Style="{StaticResource Style_Button_Open}"/>
+                    Style="{StaticResource Style_Button_Open}"
+                    Click="Button_SelectFile_OnClick"/>
             <Label x:Name="Label_FilePath" 
                    Style="{StaticResource Style_Default_2}"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
             <Button x:Name="Button_Clear" 
                     Content="Clear"
-                    Style="{StaticResource Style_Button_Clear}"/>
+                    Style="{StaticResource Style_Button_Clear}"
+                    Click="Button_Clear_OnClick"/>
             <Button x:Name="Button_Upload" 
                     Content="Upload" 
-                    Style="{StaticResource Style_Button_Submit}"/>
+                    Style="{StaticResource Style_Button_Submit}"
+                    Click="Button_Upload_OnClick"/>
         </StackPanel>
     </StackPanel>
 </Window>
