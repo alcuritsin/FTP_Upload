@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP_UploadFile.App", "FTP_UploadFile.App\FTP_UploadFile.App.csproj", "{FA00FBBE-7AC8-471C-A875-7ED470D5D7DE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTP_Lib", "FTP_Lib\FTP_Lib.csproj", "{B8787BF7-490B-48F5-BD09-5A5384656E59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{FA00FBBE-7AC8-471C-A875-7ED470D5D7DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA00FBBE-7AC8-471C-A875-7ED470D5D7DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA00FBBE-7AC8-471C-A875-7ED470D5D7DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8787BF7-490B-48F5-BD09-5A5384656E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8787BF7-490B-48F5-BD09-5A5384656E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8787BF7-490B-48F5-BD09-5A5384656E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8787BF7-490B-48F5-BD09-5A5384656E59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
