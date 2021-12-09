@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FTP_Lib</name>
+    </assembly>
+    <members>
+        <member name="T:FTP_Lib.Ftp">
+            <summary>
+            Основной класс библиотеки для работы с FTP
+            </summary>
+        </member>
+        <member name="M:FTP_Lib.Ftp.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Конструктор класса
+            </summary>
+            <param name="ftpPath">Путь к FTP-серверу</param>
+            <param name="login">Логин пользователя</param>
+            <param name="password">Пароль пользователя</param>
+        </member>
+        <member name="M:FTP_Lib.Ftp.UploadFile(System.String,System.String@)">
+            <summary>
+            Загрузка любого файла на FTP-сервер
+            </summary>
+            <param name="filePath">Путь к файлу</param>
+            <param name="responseStatus">Ответ FTP-сервера</param>
+        </member>
+    </members>
+</doc>
