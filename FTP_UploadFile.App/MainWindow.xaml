@@ -10,7 +10,7 @@
         <ResourceDictionary Source="Styles.xaml"/>
     </Window.Resources>
     <StackPanel>
-        <Label x:Name="Title" 
+        <Label x:Name="Label_Title" 
                Content="Загрузка файла на FTP-сервер"
                Style="{StaticResource Style_Title}"/>
         
